@@ -39,7 +39,7 @@ const SideDock = ({
       label: 'CV',
       icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0ede862f-a57f-46a3-a390-d129c1493ba1-shnplatz-vercel-app/assets/icons/cv_icon-4.png',
       type: 'link' as const,
-      href: '/CV_ATS_Shanon.pdf',
+      href: '/CV_Andrew_Jonathan.pdf',
     },
     {
       id: 'suggestions',

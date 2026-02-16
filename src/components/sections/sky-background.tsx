@@ -1,15 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
 
 /**
  * SkyBackground Component
  * 
- * Clones the main desktop background containing the sky-blue color, 
- * the subtle centered logo watermark, and the animated parallax cloud 
- * layers (front and back) that move across the top of the viewport.
+ * Desktop background with sky-blue color, centered logo watermark,
+ * and animated parallax cloud layers.
  */
 const SkyBackground: React.FC = () => {
-  // Assets from provided list
   const logoUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0ede862f-a57f-46a3-a390-d129c1493ba1-shnplatz-vercel-app/assets/images/logo-1.png";
   const cloudBackUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0ede862f-a57f-46a3-a390-d129c1493ba1-shnplatz-vercel-app/assets/images/cloudback-2.png";
   const cloudFrontUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/0ede862f-a57f-46a3-a390-d129c1493ba1-shnplatz-vercel-app/assets/images/cloudfront-3.png";
@@ -19,13 +16,10 @@ const SkyBackground: React.FC = () => {
       {/* Subtle Centered Logo Watermark */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative w-3/4 max-w-2xl opacity-15 select-none">
-          <Image
+          <img
             src={logoUrl}
-            alt="shn's Platz Watermark"
-            width={800}
-            height={800}
+            alt="Andrew Jonathan Watermark"
             className="w-full h-auto object-contain"
-            priority
           />
         </div>
       </div>
@@ -41,19 +35,17 @@ const SkyBackground: React.FC = () => {
           }}
         >
           <div className="relative w-1/2 h-full">
-            <Image 
+            <img 
               src={cloudBackUrl} 
               alt="" 
-              fill 
-              className="object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
           <div className="relative w-1/2 h-full">
-            <Image 
+            <img 
               src={cloudBackUrl} 
               alt="" 
-              fill 
-              className="object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
         </div>
@@ -66,19 +58,17 @@ const SkyBackground: React.FC = () => {
           }}
         >
           <div className="relative w-1/2 h-full">
-            <Image 
+            <img 
               src={cloudFrontUrl} 
               alt="" 
-              fill 
-              className="object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
           <div className="relative w-1/2 h-full">
-            <Image 
+            <img 
               src={cloudFrontUrl} 
               alt="" 
-              fill 
-              className="object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
         </div>

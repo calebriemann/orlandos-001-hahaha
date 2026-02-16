@@ -4,34 +4,34 @@ import React, { useState } from "react";
 
 // --- Skills Data ---
 const languages = [
-  { icon: "https://shnplatz.vercel.app/assets/typescript_icon.png", label: "TypeScript" },
-  { icon: "https://shnplatz.vercel.app/assets/javascript_icon.png", label: "JavaScript" },
-  { icon: "https://shnplatz.vercel.app/assets/java_icon.png", label: "Java" },
-  { icon: "https://shnplatz.vercel.app/assets/python_icon.png", label: "Python" },
-  { icon: "https://shnplatz.vercel.app/assets/php_icon.png", label: "PHP" },
-  { icon: "https://shnplatz.vercel.app/assets/c_icon.png", label: "C" },
-  { icon: "https://shnplatz.vercel.app/assets/c++_icon.png", label: "C++" },
-  { icon: "https://shnplatz.vercel.app/assets/csharp_icon.png", label: "C#" },
-  { icon: "https://shnplatz.vercel.app/assets/html_icon.png", label: "HTML" },
-  { icon: "https://shnplatz.vercel.app/assets/css_icon.png", label: "CSS" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", label: "TypeScript" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", label: "JavaScript" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", label: "Java" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", label: "Python" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", label: "PHP" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", label: "C" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", label: "C++" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", label: "C#" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", label: "HTML" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", label: "CSS" },
 ];
 
 const frameworks = [
-  { icon: "https://shnplatz.vercel.app/assets/nextjs_icon.png", label: "Next.js" },
-  { icon: "https://shnplatz.vercel.app/assets/react_icon.png", label: "React" },
-  { icon: "https://shnplatz.vercel.app/assets/express_icon.png", label: "Express" },
-  { icon: "https://shnplatz.vercel.app/assets/laravel_icon.png", label: "Laravel" },
-  { icon: "https://shnplatz.vercel.app/assets/tensorflow_icon.png", label: "TensorFlow" },
-  { icon: "https://shnplatz.vercel.app/assets/nodejs_icon.png", label: "Node.js" },
-  { icon: "https://shnplatz.vercel.app/assets/django_icon.png", label: "Django" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", label: "Next.js" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "React" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", label: "Express" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg", label: "Laravel" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", label: "TensorFlow" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", label: "Node.js" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg", label: "Django" },
 ];
 
 const tools = [
-  { icon: "https://shnplatz.vercel.app/assets/tailwind_icon.png", label: "Tailwind CSS" },
-  { icon: "https://shnplatz.vercel.app/assets/mysql_icon.png", label: "MySQL" },
-  { icon: "https://shnplatz.vercel.app/assets/mongodb_icon.png", label: "MongoDB" },
-  { icon: "https://shnplatz.vercel.app/assets/jupyter_icon.png", label: "Jupyter" },
-  { icon: "https://shnplatz.vercel.app/assets/unity_icon.png", label: "Unity" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", label: "Tailwind CSS" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", label: "MySQL" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", label: "MongoDB" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg", label: "Jupyter" },
+  { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg", label: "Unity" },
 ];
 
 function SkillCubeGrid({ items }: { items: { icon: string; label: string }[] }) {
@@ -112,11 +112,14 @@ export default function AboutWindow({ aboutRef, onPointerDown, setShowAbout }: A
               {/* Photo */}
               <div className="w-full sm:w-1/3 flex justify-center">
                 <div className="aspect-[4/6] w-full overflow-hidden rounded-xl border-[3px] border-[#36312C] bg-[#d7d0c4]">
-                  <img
-                    src="https://shnplatz.vercel.app/assets/foto.png"
-                    alt="Shanon Giuly Istanto"
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="w-full h-full flex items-center justify-center bg-[#d7d0c4] text-[#36312C]">
+                    <div className="text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-2 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                      </svg>
+                      <span className="text-sm font-bold opacity-60">Andrew Jonathan</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -124,7 +127,7 @@ export default function AboutWindow({ aboutRef, onPointerDown, setShowAbout }: A
               <div className="text-[#36312C] text-sm sm:text-base space-y-4 w-full sm:w-2/3">
                 <div className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-base">
                   <div className="font-bold">Name</div>
-                  <div>: Shanon Giuly Istanto</div>
+                  <div>: Andrew Jonathan</div>
                   <div className="font-bold">Major</div>
                   <div>: Computer Science - Software Engineering</div>
                   <div className="font-bold">GPA</div>

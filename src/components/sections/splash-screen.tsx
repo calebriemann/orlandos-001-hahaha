@@ -37,21 +37,16 @@ const SplashScreen: React.FC = () => {
       }`}
       aria-hidden="true"
     >
-      <video
-        src="https://shnplatz.vercel.app/assets/logo_video2.mp4"
-        autoPlay
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      />
+      <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-black">
+        <div className="text-center animate-pulse">
+          <div className="text-[#F9F2E4] text-4xl sm:text-6xl font-extrabold tracking-wider mb-4">
+            Andrew Jonathan
+          </div>
+          <div className="text-[#7F9795] text-sm sm:text-lg font-semibold tracking-widest uppercase">
+            Portfolio
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

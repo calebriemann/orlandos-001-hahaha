@@ -22,22 +22,21 @@ interface Project {
 // --- Project Data ---
 const projects: Project[] = [
   {
-    name: "shn's Platz (Portfolio)",
+    name: "Andrew's Portfolio",
     language: "TypeScript",
     type: "Frontend",
     category: "major",
-    image: "https://shnplatz.vercel.app/assets/projectImages/shnplatz.png",
+    image: "",
     description:
       "Retro-themed personal portfolio built with Next.js, TypeScript, Tailwind CSS, and Three JS elements. The site is modular, and fully responsive for optimal performance and scalability.",
     links: [
-      "https://shnplatz.vercel.app",
       "https://github.com/shanon-g/shnplatz",
     ],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/typescript_icon.png", label: "TypeScript" },
-      { src: "https://shnplatz.vercel.app/assets/nextjs_icon.png", label: "Next.js" },
-      { src: "https://shnplatz.vercel.app/assets/tailwind_icon.png", label: "Tailwind CSS" },
-      { src: "https://shnplatz.vercel.app/assets/threejs_icon.png", label: "Three.js" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", label: "TypeScript" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", label: "Next.js" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", label: "Tailwind CSS" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg", label: "Three.js" },
     ],
   },
   {
@@ -45,15 +44,15 @@ const projects: Project[] = [
     language: "JavaScript",
     type: "Fullstack",
     category: "minor",
-    image: "https://shnplatz.vercel.app/assets/projectImages/skillbridge.png",
+    image: "",
     description:
       "A matchmaking platform for collaborative skill exchange, built with React (Vite), Express, and MySQL in JavaScript. Features include swipe-to-match profiles, real-time messaging, and JWT-based authentication. Collab project; mainly made backend.",
     links: ["https://github.com/joannemarcelina/Sofeng-AOL"],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/javascript_icon.png", label: "JavaScript" },
-      { src: "https://shnplatz.vercel.app/assets/react_icon.png", label: "React" },
-      { src: "https://shnplatz.vercel.app/assets/express_icon.png", label: "Express" },
-      { src: "https://shnplatz.vercel.app/assets/mysql_icon.png", label: "MySQL" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", label: "JavaScript" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "React" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", label: "Express" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", label: "MySQL" },
     ],
   },
   {
@@ -61,7 +60,7 @@ const projects: Project[] = [
     language: "C# (Unity)",
     type: "Game",
     category: "major",
-    image: "https://shnplatz.vercel.app/assets/projectImages/76th.png",
+    image: "",
     description:
       "A 2D platformer for Indonesia's 76th Independence, built with Unity featuring room-based level transitions, shooting mechanics, wall-jumping, and player animation control.",
     links: [
@@ -69,8 +68,8 @@ const projects: Project[] = [
       "https://github.com/shanon-g/76th_Game",
     ],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/csharp_icon.png", label: "C#" },
-      { src: "https://shnplatz.vercel.app/assets/unity_icon.png", label: "Unity" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", label: "C#" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg", label: "Unity" },
     ],
   },
   {
@@ -78,7 +77,7 @@ const projects: Project[] = [
     language: "Python",
     type: "IoT, Deep Learning",
     category: "major",
-    image: "https://shnplatz.vercel.app/assets/projectImages/paap.png",
+    image: "",
     description:
       "IoT prototype detects air quality with DHT11 & MQ135 sensors & activates air purifier based on LSTM-predicted pollution levels. Includes MongoDB storage, REST API, FastAPI + AI, Streamlit dashboard. Collab project; mainly helped model & database.",
     links: [
@@ -86,9 +85,9 @@ const projects: Project[] = [
       "https://l1nq.com/github-Prototype-PAAP",
     ],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/python_icon.png", label: "Python" },
-      { src: "https://shnplatz.vercel.app/assets/jupyter_icon.png", label: "Jupyter" },
-      { src: "https://shnplatz.vercel.app/assets/mongodb_icon.png", label: "MongoDB" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", label: "Python" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg", label: "Jupyter" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", label: "MongoDB" },
     ],
   },
   {
@@ -96,14 +95,14 @@ const projects: Project[] = [
     language: "Python",
     type: "Computer Vision, Deep Learning",
     category: "minor",
-    image: "https://shnplatz.vercel.app/assets/projectImages/asl.png",
+    image: "",
     description:
       "Trained a deep learning model to classify American Sign Language (ASL) alphabet using a MobileNetV2 base with data augmentation and fine-tuning. Achieved 99.08% F1 Score on test set using 85k+ training images and class balancing. Collab Project",
     links: ["https://github.com/shanon-g/asl"],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/python_icon.png", label: "Python" },
-      { src: "https://shnplatz.vercel.app/assets/jupyter_icon.png", label: "Jupyter" },
-      { src: "https://shnplatz.vercel.app/assets/tensorflow_icon.png", label: "TensorFlow" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", label: "Python" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg", label: "Jupyter" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", label: "TensorFlow" },
     ],
   },
   {
@@ -111,12 +110,12 @@ const projects: Project[] = [
     language: "C",
     type: "Game",
     category: "minor",
-    image: "https://shnplatz.vercel.app/assets/projectImages/bubblefizzpop.png",
+    image: "",
     description:
-      'Console arcade game written in C. Players control a cannon to shoot balls & destroy falling targets labeled with decreasing values (3→2→1). Includes movement mechanics, random waves, scoring system. Features win/lose conditions & trail effects using ASCII.',
+      'Console arcade game written in C. Players control a cannon to shoot balls & destroy falling targets labeled with decreasing values (3 to 2 to 1). Includes movement mechanics, random waves, scoring system. Features win/lose conditions & trail effects using ASCII.',
     links: ["https://github.com/shanon-g/bubbleFizzpop"],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/c_icon.png", label: "C" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", label: "C" },
     ],
   },
   {
@@ -124,7 +123,7 @@ const projects: Project[] = [
     language: "JavaScript",
     type: "Frontend",
     category: "minor",
-    image: "https://shnplatz.vercel.app/assets/projectImages/cw.png",
+    image: "",
     description:
       "A very simple luxury fashion brand website built with HTML, CSS, & JavaScript. Features responsive pages for product listings (filters), detail views, and event registration. Includes interactive elements like dynamic image previews, scroll-to-top, and newsletter popups.",
     links: [
@@ -132,9 +131,9 @@ const projects: Project[] = [
       "https://shanon-g.github.io/christianwijaya/",
     ],
     techIcons: [
-      { src: "https://shnplatz.vercel.app/assets/javascript_icon.png", label: "JavaScript" },
-      { src: "https://shnplatz.vercel.app/assets/html_icon.png", label: "HTML" },
-      { src: "https://shnplatz.vercel.app/assets/css_icon.png", label: "CSS" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", label: "JavaScript" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", label: "HTML" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", label: "CSS" },
     ],
   },
 ];
@@ -164,8 +163,17 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className={`flex flex-col sm:flex-row sm:items-stretch gap-3 sm:gap-4 px-2 py-2 sm:p-4 rounded-lg ${hoverBg} transition-colors duration-200`}>
       <div className="w-full sm:w-78 shrink-0">
-        <div className="aspect-video w-full overflow-hidden border-[3px] border-[#36312C] rounded-xl bg-[#d7d0c4]">
-          <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+        <div className="aspect-video w-full overflow-hidden border-[3px] border-[#36312C] rounded-xl bg-[#d7d0c4] flex items-center justify-center">
+          {project.image ? (
+            <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+          ) : (
+            <div className="text-center text-[#36312C]">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 mx-auto opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0 0 22.5 18.75V5.25A2.25 2.25 0 0 0 20.25 3H3.75A2.25 2.25 0 0 0 1.5 5.25v13.5A2.25 2.25 0 0 0 3.75 21Z" />
+              </svg>
+              <span className="text-xs font-bold opacity-50 mt-1 block">{project.name}</span>
+            </div>
+          )}
         </div>
       </div>
       <div className="flex-1 min-w-0 flex flex-col gap-2">

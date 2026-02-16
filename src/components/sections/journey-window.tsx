@@ -16,28 +16,28 @@ const timelineEntries = [
 
 // Gallery images from the original site
 const galleryImages: { name: string; title: string; src: string }[] = [
-  { name: "pic_entrance", title: "BINUS Inauguration 2023", src: "https://shnplatz.vercel.app/journey/gallery/pic_entrance.png" },
-  { name: "pic_himti1a", title: "TECHNO - Bekasi Booth", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti1a.png" },
-  { name: "pic_himti1b", title: "TECHNO - Committee", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti1b.png" },
-  { name: "pic_himti1c", title: "TECHNO - Visualization Div.", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti1c.png" },
-  { name: "pic_himti2", title: "Seminar @BKS 2024", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti2.png" },
-  { name: "pic_himti3", title: "Workshop @BKS 2024", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti3.png" },
-  { name: "pic_himti4", title: "SESVENT 2024", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti4.png" },
-  { name: "pic_himti5", title: "Exec Board Mem. (Pengurus) 2025/2026", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti5.png" },
-  { name: "pic_himti6a", title: "President Title Handover", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti6a.png" },
-  { name: "pic_himti6b", title: "Exec Board Mem. @BKS", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti6b.png" },
-  { name: "pic_himti7", title: "HILET 2025", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti7.png" },
-  { name: "pic_himti8a", title: "Kunjungan Kerja Ketua Organisasi 2025/2026", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti8a.png" },
-  { name: "pic_himti8b", title: "HIMTI x BNEC", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti8b.png" },
-  { name: "pic_himti9", title: "ICPC 2025", src: "https://shnplatz.vercel.app/journey/gallery/pic_himti9.png" },
-  { name: "pic_shelf1", title: "Mentor MC", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf1.png" },
-  { name: "pic_shelf2", title: "Mentor B27", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf2.png" },
-  { name: "pic_shelf3", title: "Mentor B28", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf3.png" },
-  { name: "pic_shelf4", title: "FP Session 4", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf4.png" },
-  { name: "pic_shelf5", title: "FP Session 12", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf5.png" },
-  { name: "pic_shelf6", title: "FP Opening", src: "https://shnplatz.vercel.app/journey/gallery/pic_shelf6.png" },
-  { name: "arcade_screen", title: "Lab Assistant 2024 - 2026", src: "https://shnplatz.vercel.app/journey/gallery/arcade.png" },
-  { name: "tv_screen", title: "Apple Developer Academy - Talent Spark Cohort 2025", src: "https://shnplatz.vercel.app/journey/gallery/tv.png" },
+  { name: "pic_entrance", title: "BINUS Inauguration 2023", src: "" },
+  { name: "pic_himti1a", title: "TECHNO - Bekasi Booth", src: "" },
+  { name: "pic_himti1b", title: "TECHNO - Committee", src: "" },
+  { name: "pic_himti1c", title: "TECHNO - Visualization Div.", src: "" },
+  { name: "pic_himti2", title: "Seminar @BKS 2024", src: "" },
+  { name: "pic_himti3", title: "Workshop @BKS 2024", src: "" },
+  { name: "pic_himti4", title: "SESVENT 2024", src: "" },
+  { name: "pic_himti5", title: "Exec Board Mem. (Pengurus) 2025/2026", src: "" },
+  { name: "pic_himti6a", title: "President Title Handover", src: "" },
+  { name: "pic_himti6b", title: "Exec Board Mem. @BKS", src: "" },
+  { name: "pic_himti7", title: "HILET 2025", src: "" },
+  { name: "pic_himti8a", title: "Kunjungan Kerja Ketua Organisasi 2025/2026", src: "" },
+  { name: "pic_himti8b", title: "HIMTI x BNEC", src: "" },
+  { name: "pic_himti9", title: "ICPC 2025", src: "" },
+  { name: "pic_shelf1", title: "Mentor MC", src: "" },
+  { name: "pic_shelf2", title: "Mentor B27", src: "" },
+  { name: "pic_shelf3", title: "Mentor B28", src: "" },
+  { name: "pic_shelf4", title: "FP Session 4", src: "" },
+  { name: "pic_shelf5", title: "FP Session 12", src: "" },
+  { name: "pic_shelf6", title: "FP Opening", src: "" },
+  { name: "arcade_screen", title: "Lab Assistant 2024 - 2026", src: "" },
+  { name: "tv_screen", title: "Apple Developer Academy - Talent Spark Cohort 2025", src: "" },
 ];
 
 interface JourneyWindowProps {
@@ -123,15 +123,23 @@ export default function JourneyWindow({
                   {galleryImages.map((img) => (
                     <button
                       key={img.name}
-                      onClick={() => setSelectedImage(img)}
+                      onClick={() => img.src ? setSelectedImage(img) : undefined}
                       className="group relative aspect-video overflow-hidden rounded-xl border-[3px] border-[#36312C] bg-[#d7d0c4] hover:border-[#7F9795] transition-colors"
                     >
-                      <img
-                        src={img.src}
-                        alt={img.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                        loading="lazy"
-                      />
+                      {img.src ? (
+                        <img
+                          src={img.src}
+                          alt={img.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 opacity-30 text-[#36312C]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0 0 22.5 18.75V5.25A2.25 2.25 0 0 0 20.25 3H3.75A2.25 2.25 0 0 0 1.5 5.25v13.5A2.25 2.25 0 0 0 3.75 21Z" />
+                          </svg>
+                        </div>
+                      )}
                       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#36312C]/80 to-transparent p-2">
                         <span className="text-[#F9F2E4] text-[10px] sm:text-xs font-bold">{img.title}</span>
                       </div>
@@ -166,7 +174,13 @@ export default function JourneyWindow({
             </div>
             <div className="p-3 sm:p-4 bg-[#e4cdac]">
               <div className="w-full max-h-[70vh] overflow-auto rounded-lg border-[4px] border-[#36312C] bg-black">
-                <img src={selectedImage.src} alt={selectedImage.title} className="block w-full h-auto object-contain" draggable={false} />
+                {selectedImage.src ? (
+                  <img src={selectedImage.src} alt={selectedImage.title} className="block w-full h-auto object-contain" draggable={false} />
+                ) : (
+                  <div className="w-full h-64 flex items-center justify-center text-[#F9F2E4] opacity-50">
+                    <span className="text-sm">Image not available</span>
+                  </div>
+                )}
               </div>
               <div className="mt-2 text-[10px] sm:text-xs font-bold text-[#36312C] opacity-80">
                 Click ✕ / press ESC to close

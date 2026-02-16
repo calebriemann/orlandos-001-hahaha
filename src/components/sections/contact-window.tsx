@@ -3,12 +3,12 @@
 import React, { useState, useEffect } from "react";
 
 const contactLinks = [
-  { href: "https://github.com/shanon-g", icon: "https://shnplatz.vercel.app/assets/github_icon.png", label: "GitHub" },
-  { href: "https://www.linkedin.com/in/shanon-giuly-istanto/", icon: "https://shnplatz.vercel.app/assets/linkedin_icon.png", label: "LinkedIn" },
-  { href: "https://discord.com/users/551231698046812160", icon: "https://shnplatz.vercel.app/assets/discord_icon.png", label: "Discord" },
-  { href: "https://www.instagram.com/shanon_g.i/", icon: "https://shnplatz.vercel.app/assets/instagram_icon.png", label: "Instagram" },
-  { href: "https://x.com/shannn_tw9", icon: "https://shnplatz.vercel.app/assets/x_icon.png", label: "Twitter/X" },
-  { href: "https://www.youtube.com/@shn.mp4", icon: "https://shnplatz.vercel.app/assets/youtube_icon.png", label: "YouTube" },
+  { href: "https://github.com/shanon-g", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", label: "GitHub" },
+  { href: "https://www.linkedin.com/in/shanon-giuly-istanto/", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg", label: "LinkedIn" },
+  { href: "https://discord.com/users/551231698046812160", icon: "https://cdn.simpleicons.org/discord/5865F2", label: "Discord" },
+  { href: "https://www.instagram.com/shanon_g.i/", icon: "https://cdn.simpleicons.org/instagram/E4405F", label: "Instagram" },
+  { href: "https://x.com/shannn_tw9", icon: "https://cdn.simpleicons.org/x/000000", label: "Twitter/X" },
+  { href: "https://www.youtube.com/@shn.mp4", icon: "https://cdn.simpleicons.org/youtube/FF0000", label: "YouTube" },
 ];
 
 interface ContactWindowProps {
